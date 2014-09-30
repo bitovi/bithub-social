@@ -47,10 +47,9 @@
 .label-size {
 	font-size: 11px;
 }
-.box-shadow(@vert: 2px, @horiz: 2px, @size: 5px, @opacity: 0.1) {
-	-moz-box-shadow: @vert @horiz @size rgba(0, 0, 0, @opacity);
-	-webkit-box-shadow: @vert @horiz @size rgba(0, 0, 0, @opacity);
-	box-shadow: @vert @horiz @size rgba(0, 0, 0, @opacity);
+.box-shadow(@shadow: 0 1px 3px rgba(0,0,0,.25)) {
+  -webkit-box-shadow: @shadow; // iOS <4.3 & Android <4.1
+          box-shadow: @shadow;
 }
 .no-box-shadow {
 	-moz-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0) !important;

@@ -1,7 +1,7 @@
 requirejs(['can/util/library', 'can/control'], function(can){
   var App = can.Control({
     init : function(){
-      this.element.html('Hello World!');
+      // this.element.html('Hello World!');
     }
   })
 

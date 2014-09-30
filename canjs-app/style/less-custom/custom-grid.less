@@ -1,12 +1,8 @@
-.no-gutter, {
+.no-gutter {
   margin-left: 0;
   margin-right: 0;
   padding-left: 0 !important;
   padding-right: 0 !important;  
-  [class*="col-"]  {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-  }
   [class*="row"] {
     margin-left: 0;
     margin-right: 0;
@@ -14,4 +10,64 @@
 }
 .block-level {
   display: block;
+}
+// grid helpers
+
+.b_padding--lowAll,
+.b_padding--medAll,
+.b_padding--maxAll,
+.b_padding--minVert,
+.b_padding--lowVert,
+.b_padding--medVert,
+.b_padding--maxVert,
+.b_padding--minHorz,
+.b_padding--lowHorz,
+.b_padding--medHorz,
+.b_padding--maxHorz {
+  &:extend(.clearfix all);
+}
+
+/* Grid Helpers */
+.b_padding--lowAll {
+    padding: 10px;
+}
+.b_padding--medAll {
+    padding: 20px;
+}
+.b_padding--maxAll {
+    padding: 30px;
+}
+
+.b_padding--minVert{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.b_padding--lowVert{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.b_padding--medVert {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.b_padding--maxVert {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.b_padding--minHorz {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.b_padding--lowHorz {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.b_padding--medHorz {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.b_padding--maxHorz {
+    padding-right: 30px;
+    padding-left: 30px;
 }

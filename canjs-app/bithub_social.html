@@ -5,8 +5,63 @@
     <link rel="stylesheet" href="style/style.css">
   </head>
   <body>
-    <h1>Welcome to CanJS!</h1>
-    <div id="content"></div>
+    <main id="content" class="container-fluid bit-feed">
+      <h1>Bithub Bits Demo</h1>
+
+      <article class="bit col-sm-3 no-gutter">
+        <header class="bit-header">
+          <figure class="bit-avatar col-sm-2">
+            <a href="#">
+              <img class="bit-avatar--img" src="http://gravatar.com/avatar/7c36e3920ea1fbeadd6c208c8d9be803?s=64" />
+            </a>
+          </figure>
+          <figcaption class="col-sm-8 no-gutter">
+            <div class="bit-authorName">John Jacob Jingleheimer Schmidt</div>
+            <div class="bit-authorHandle">
+              <a href="#">
+                @JJJS
+              </a>  
+            </div>
+          </figcaption>
+          <div class="bit-origin col-sm-2 text-right">
+            <a href="#" class="bh-icon-twitter"></a>
+          </div>
+        </header>
+        <div class="bit-content col-sm-12">
+            <figure class="bit-content--media b_padding--lowVert">
+              <img class="img-responsive" src="http://placehold.it/650x250" />
+            </figure>
+            <figcaption class="bit-content--caption">
+              <p>Image Example - this is an image example with a whole bunch of text that just goes on about nothing really.</p>
+            </figcaption>
+        </div>
+        <footer class="bit-footer col-sm-12 b_padding--lowVert">
+            <!-- Twitter Button -->
+            <div class="col-sm-3 pull-right">
+              <a class="twitter-share-button" href="https://twitter.com/share">
+                Tweet
+              </a>
+              <script type="text/javascript">
+              window.twttr=(function(d,s,id){var t,js,fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return}js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);return window.twttr||(t={_e:[],ready:function(f){t._e.push(f)}})}(document,"script","twitter-wjs"));
+              </script>
+            </div>
+            <!-- Facebook Like Button -->
+            <div class="col-sm-2 pull-right">
+              <div id="fb-root"></div>
+              <script>(function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=516064301835521&version=v2.0";
+                fjs.parentNode.insertBefore(js, fjs);
+              }(document, 'script', 'facebook-jssdk'));</script>
+              <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
+            </div>
+        </footer>
+      </article> 
+
+
+    </main>
     <script type='text/javascript' src='bower_components/requirejs/require.js' data-main='bithub_social'></script>
     <script type='text/javascript' src='requirejsconfig.js'></script>
   </body>
