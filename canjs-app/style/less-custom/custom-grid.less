@@ -1,6 +1,4 @@
 .no-gutter {
-  margin-left: 0;
-  margin-right: 0;
   padding-left: 0 !important;
   padding-right: 0 !important;  
   [class*="row"] {
@@ -24,7 +22,7 @@
 .b_padding--lowHorz,
 .b_padding--medHorz,
 .b_padding--maxHorz {
-  &:extend(.clearfix all);
+  .clearfix;
 }
 
 /* Grid Helpers */
