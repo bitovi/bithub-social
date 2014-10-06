@@ -1635,7 +1635,7 @@ pre code {
 .b_padding--maxHorz:after {
   clear: both;
 }
-/* Grid Helpers */
+/* Grid Helpers - Padding */
 .b_padding--lowAll {
   padding: 10px;
 }
@@ -1676,6 +1676,49 @@ pre code {
 .b_padding--maxHorz {
   padding-right: 30px;
   padding-left: 30px;
+}
+/* Grid Helpers - margins */
+.b_margin--lowAll {
+  margin: 10px;
+}
+.b_margin--medAll {
+  margin: 20px;
+}
+.b_margin--maxAll {
+  margin: 30px;
+}
+.b_margin--minVert {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.b_margin--lowVert,
+.bit {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.b_margin--medVert {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.b_margin--maxVert {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.b_margin--minHorz {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.b_margin--lowHorz {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.b_margin--medHorz {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.b_margin--maxHorz {
+  margin-right: 30px;
+  margin-left: 30px;
 }
 table {
   background-color: transparent;
@@ -5851,12 +5894,78 @@ button.close {
 .bit .bit-header:after {
   clear: both;
 }
-.bit .bh-icon-twitter {
+.bit .bh-icon {
   font-size: 1.5em;
   padding-right: 10px;
 }
+.bit .bh-icon:hover {
+  text-decoration: none;
+}
+.bit .bh-icon-twitter {
+  color: #55acee;
+}
+.bit .bh-icon-youtube {
+  color: #cc181e;
+}
+.bit .bh-icon-facebook {
+  color: #3b5998;
+}
+.bit .bh-icon-instagram {
+  color: #3f729b;
+}
+.bit .bh-icon-flickr {
+  color: #FF0084;
+}
+.bit .bh-icon-googleplus {
+  color: #d73d32;
+}
+.bit .bh-icon-tumblr {
+  color: #2d4661;
+}
+.bit .share-fb {
+  width: 70px;
+}
+.bit .share-tw {
+  width: 76px;
+}
 .bit-avatar .bit-avatar--img {
   border-radius: 50%;
+}
+.fb_iframe_widget,
+.fb_iframe_widget span,
+.fb_iframe_widget span iframe[style] {
+  width: 100% !important;
+}
+.fb-comments {
+  width: 100% !important;
+}
+.fb-comments iframe[style] {
+  width: 100% !important;
+}
+.fb-like-box {
+  min-width: 280px;
+  width: 100% !important;
+}
+.fb-like-box iframe[style] {
+  min-width: 280px;
+  width: 100% !important;
+}
+.fb-comments span {
+  width: 100% !important;
+}
+.fb-comments iframe span[style] {
+  width: 100% !important;
+}
+.fb-like-box span {
+  min-width: 280px;
+  width: 100% !important;
+}
+.fb-like-box iframe span[style] {
+  min-width: 280px;
+  width: 100% !important;
+}
+.-cx-PRIVATE-pluginBoxContainer__border {
+  border: none;
 }
 .modal-open {
   overflow: hidden;
