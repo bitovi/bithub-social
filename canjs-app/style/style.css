@@ -5854,6 +5854,8 @@ button.close {
   -webkit-border-radius: 10px;
   background-color: #ffffff;
   border: 1px solid #eeeeee;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0);
 }
 .bit:before,
 .bit:after {
@@ -5894,6 +5896,9 @@ button.close {
 .bit .bit-header:after {
   clear: both;
 }
+.bit .bit-avatar .bit-avatar--img {
+  border-radius: 50%;
+}
 .bit .bh-icon {
   font-size: 1.5em;
   padding-right: 10px;
@@ -5928,44 +5933,48 @@ button.close {
 .bit .share-tw {
   width: 76px;
 }
-.bit-avatar .bit-avatar--img {
-  border-radius: 50%;
+.bit .bit-content--media {
+  max-height: 350px;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
-.fb_iframe_widget,
-.fb_iframe_widget span,
-.fb_iframe_widget span iframe[style] {
-  width: 100% !important;
+.bit .img-responsive {
+  margin: 0 auto;
 }
-.fb-comments {
-  width: 100% !important;
+.bit-feed {
+  -moz-column-width: 18em;
+  -webkit-column-width: 18em;
+  -moz-column-gap: 1em;
+  -webkit-column-gap: 1em;
 }
-.fb-comments iframe[style] {
-  width: 100% !important;
+.bit-container {
+  display: inline-block;
+  padding: 1rem;
+  width: 100%;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
 }
-.fb-like-box {
-  min-width: 280px;
-  width: 100% !important;
+@media (min-width: 768px) {
+  .bit-feed {
+    -moz-column-width: 20em;
+    -webkit-column-width: 20em;
+  }
 }
-.fb-like-box iframe[style] {
-  min-width: 280px;
-  width: 100% !important;
+@media (min-width: 992px) {
+  .bit-feed {
+    -moz-column-width: 25em;
+    -webkit-column-width: 25em;
+  }
 }
-.fb-comments span {
-  width: 100% !important;
-}
-.fb-comments iframe span[style] {
-  width: 100% !important;
-}
-.fb-like-box span {
-  min-width: 280px;
-  width: 100% !important;
-}
-.fb-like-box iframe span[style] {
-  min-width: 280px;
-  width: 100% !important;
-}
-.-cx-PRIVATE-pluginBoxContainer__border {
-  border: none;
+@media (min-width: 1200px) {
+  .bit-feed {
+    -moz-column-width: 30em;
+    -webkit-column-width: 30em;
+  }
 }
 .modal-open {
   overflow: hidden;
