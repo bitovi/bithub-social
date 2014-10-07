@@ -11,17 +11,21 @@
  .animated;
  .zoomIn;
 }
+// Default "Clear" Theme
 .bit {
   .border-radius(10px);
   background-color: @white;
   border: 1px solid @gray-lighter;
+  overflow: hidden;
   &:extend(.b_margin--lowVert all);
   .clearfix;
   .box-shadow(0 0 20px rgba(0,0,0,0));
   &:hover {
     .box-shadow(0 0 20px rgba(0,0,0,.15));
   }
-  .bit-header {
+  // header
+  .bit-header,
+  .bit-footer {
     padding: 10px 0;
     .clearfix
   }
@@ -62,8 +66,10 @@
     width: 70px;
   }
   .share-tw {
-    width: 76px
+    width: 76px;
+    margin-right:20px;
   }
+  // Content
   .bit-content--media {
     max-height: 350px;
     overflow-y: auto;
@@ -73,6 +79,116 @@
     margin:0 auto;
   }
 }
+// In the inspector, apply the wrapper class to the body to see the design variations.
+// This will need to be cleaned up or implemented differently later.
+
+// Bitovi Style w/ Borders
+.theme-2 {
+  .bit {
+    .bit-header {
+      border-bottom: 1px solid @gray-lighter;
+    }
+    .bit-footer {
+      border-top: 1px solid @gray-lighter;
+    } 
+  }
+}
+// Bitovi Style with Gray header and footer
+.theme-3 {
+  .bit {
+    border: 1px solid @gray-light;
+    &:hover {
+      .box-shadow(0 0 20px rgba(0,0,0,.3));
+    }
+    // Content 
+    .bit-content {
+      &:extend(.b_padding--lowVert all);
+    }
+    .bit-header,
+    .bit-footer {
+      background-color: #f0f0f0;
+    }
+    .bit-header {
+      border-bottom: 1px solid @gray-light;
+    }
+    .bit-footer {
+      border-top: 1px solid @gray-light;
+    } 
+  }
+}
+// BitHub Style Theme
+.theme-4 {
+  .bit {
+    border: 1px solid #f0f0f0;
+    &:hover {
+      .box-shadow(0 0 20px rgba(73,149,187,.5));
+      border: 1px solid @white;
+    }
+    // Content 
+    .bit-content {
+      &:extend(.b_padding--lowVert all);
+    }
+    .bit-header,
+    .bit-footer {
+      background-color: #71bee5;
+    }
+    .bit-header {
+      .bit-avatar {
+        .bit-avatar--img {
+          border: 2px solid @white
+        }
+      }
+    }
+    .bit-header,
+    .bit-header a,
+    .bh-icon-twitter,
+    .bh-icon-youtube,
+    .bh-icon-facebook,
+    .bh-icon-instagram,
+    .bh-icon-flickr,
+    .bh-icon-googleplus,
+    .bh-icon-tumblr {
+      color: @white;
+    } 
+  }
+}
+// Dark Colors 
+.theme-5 {
+  .bit {
+    border: 1px solid @gray-darker;
+    &:hover {
+      .box-shadow(0 0 20px rgba(0,0,0,.3));
+      border: 1px solid @white;
+    }   
+    // Content 
+    .bit-content {
+      &:extend(.b_padding--lowVert all);
+    }
+    .bit-header,
+    .bit-footer {
+      background-color: @gray-dark;
+    }
+    .bit-header {
+      .bit-avatar {
+        .bit-avatar--img {
+          border: 2px solid @white
+        }
+      }
+    }
+    .bit-header,
+    .bit-header a,
+    .bh-icon-twitter,
+    .bh-icon-youtube,
+    .bh-icon-facebook,
+    .bh-icon-instagram,
+    .bh-icon-flickr,
+    .bh-icon-googleplus,
+    .bh-icon-tumblr {
+      color: @white;
+    } 
+  }
+}
+
 @media (min-width: @screen-sm) {
   .bit-feed {
    -moz-column-width: 20em;
