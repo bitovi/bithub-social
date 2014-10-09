@@ -27,6 +27,11 @@
             <div class="bit-origin col-xs-2 text-right">
               <a href="#" class="bh-icon bh-icon-share js-bh-icon-share" data-toggle="popover" data-placement="bottom"></a>
             </div>
+            <div class="share-popover">
+              <div><h5>Share this:</h5> <a href="#"><span class="bh-icon-googleplus"></span></a><a href="#"><span class="bh-icon-facebook"></span></a><a href="#"><span class="bh-icon-twitter"></span></a>
+              <span class="close-popover">Close</span> <!-- Element must have a close-popover class to close the popover -->
+              </div>
+            </div>
           </header>
           <div class="bit-content col-sm-12 no-gutter">
               <figure class="bit-content--media">
@@ -526,13 +531,14 @@
 
 <script type="text/javascript">
 $(document).ready(function(){
-    $(".js-bh-icon-share").popover({
-        placement : 'bottom',
-        html : true,
-        container : '.bit-origin', 
-        content : '<div><h5>Share this:</h5> <a href="#"><span class="bh-icon-googleplus"></span></a><a href="#"><span class="bh-icon-facebook"></span></a><a href="#"><span class="bh-icon-twitter"></span></a></div>',
-        template : '<div class="popover in bit-sharemenu" role="tooltip"><div class="arrow"></div><h3 class="popover-title"></h3><div class="popover-content"></div></div>'
-    });
+    $('.close-popover').click(function(){
+      $(this).closest('.share-popover').hide();
+    })
+
+    $('.js-bh-icon-share').click(function(){
+      var bit = $(this).closest('.bit');
+      bit.find('.share-popover').show();
+    })
 });
 </script>
 

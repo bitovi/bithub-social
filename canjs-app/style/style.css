@@ -5585,6 +5585,7 @@ button.close {
   -webkit-animation-delay: .2s;
 }
 .bit {
+  position: relative;
   border-radius: 4px;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
@@ -5720,6 +5721,14 @@ button.close {
 }
 .bit .bit-heading {
   margin-top: 0;
+}
+.bit .share-popover {
+  display: none;
+  right: 0;
+  top: 0;
+  background: white;
+  position: absolute;
+  border: 1px solid red;
 }
 .theme-2 .bit .bit-header {
   border-bottom: 1px solid #eeeeee;
