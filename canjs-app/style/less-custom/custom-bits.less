@@ -50,40 +50,19 @@
     }
     .bh-icon {
       position: absolute;
-      bottom:-2px;
-      right:0;
+      bottom:0;
+      right:5px;
       border-radius: 50%;
       padding: 5px;
       border: 2px solid @white;
+      width: 25px;
+      height: 25px;
+      display: table;
       &:before {
         color: @white;
-        font-size: 1em;
-        position: relative;
-        .vertical-align;   
-      }
-      &.bh-icon-twitter {
-        background-color: #55acee;
-      }
-      &.bh-icon-youtube {
-        background-color: #cc181e;
-      }
-      &.bh-icon-facebook {
-        background-color: #3b5998;
-      }
-      &.bh-icon-instagram {
-        background-color: #3f729b;
-      }
-      &.bh-icon-flickr {
-        background-color: #FF0084;
-      }
-      &.bh-icon-googleplus {
-        background-color: #d73d32;
-      }
-      &.bh-icon-tumblr {
-        background-color: #2d4661;
-      }
-      &.bh-icon-share {
-        background-color: @gray-light;
+        font-size: .8em;
+        display: table-cell;
+        vertical-align: middle;
       }       
     }
   }
@@ -106,13 +85,10 @@
   }
   // Content
   .bit-content--media {
-    max-height: 350px;
-    overflow: hidden;
     margin-bottom: 10px;
   }
   .img-responsive {
     margin:0 auto;
-    width: 100%;
   }
   .bit-content--caption {
     &:extend(.b_padding--medHorz all); 
@@ -126,10 +102,55 @@
     right: 0;
     top: 0;
     background: white;
-    position: absolute;
-    border: 1px solid red;
-
+    position: absolute; 
+    padding: 15px 10px; 
+    .bh-icon {
+      padding: 5px;
+      &:before {
+        color: @white;
+        font-size: 1em;
+      }
+    }
   }
+
+  .share-popover,
+  .bit-avatar {
+    a {
+        &:hover {
+        text-decoration: none;
+      }     
+    }
+    .bh-icon-twitter {
+      background-color: #55acee;
+    }
+    .bh-icon-youtube {
+      background-color: #cc181e;
+    }
+    .bh-icon-facebook {
+      background-color: #3b5998;
+    }
+    .bh-icon-instagram {
+      background-color: #3f729b;
+    }
+    .bh-icon-flickr {
+      background-color: #FF0084;
+    }
+    .bh-icon-googleplus {
+      background-color: #d73d32;
+    }
+    .bh-icon-tumblr {
+      background-color: #2d4661;
+    }
+    .bh-icon-github {
+      background-color: black;
+    } 
+    .bh-icon-vimeo {
+      background-color: #4bf;
+    }        
+    a.bh-icon-close {
+      color: @gray-light;
+    }
+  }  
 }
 // In the inspector, apply the wrapper class to the body to see the design variations.
 // This will need to be cleaned up or implemented differently later.
@@ -192,6 +213,9 @@
   }
   .bh-icon-share {
     color: @gray-light;
+    &:hover {
+      color: green;
+    }
   } 
 // BitHub Style Theme
 .theme-4 {
@@ -270,17 +294,39 @@
   .bit-feed {
    -moz-column-width: 20em;
    -webkit-column-width: 20em;
-  }
+  }   
 }
 @media (min-width: @screen-md) {
   .bit-feed {
    -moz-column-width: 25em;
    -webkit-column-width: 25em;
   }
+  .bit {
+    .bit-avatar {
+      .bh-icon {
+        width: 40px;
+        height: 40px;
+        &:before {
+          font-size: 1.3em;
+        }       
+      }
+    }
+  }  
 }
 @media (min-width: @screen-lg) {
   .bit-feed {
    -moz-column-width: 30em;
    -webkit-column-width: 30em;
   }
+  .bit {
+    .bit-avatar {
+      .bh-icon {
+        bottom: -8px;
+        right: -10px;
+        &:before {
+          font-size: 1.3em;
+        }       
+      }
+    }
+  }   
 }
