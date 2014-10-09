@@ -11,59 +11,71 @@
       <!-- Everything Below to the closing div, is needed for markup when implemented into the bithub site -->
       <div class="bit-feed">
         <!-- Image Example -->
-        <article class="bit-container">
+        <article class="bit-container" id="bit-container-1">
           <div class="bit">
           <header class="bit-header col-sm-12">
             <figure class="bit-avatar col-xs-3 col-md-3 col-lg-2">
               <a href="#">
                 <img class="bit-avatar--img img-responsive" src="http://gravatar.com/avatar/7c36e3920ea1fbeadd6c208c8d9be803" />
+                <a href="#" class="bh-icon bh-icon-twitter"></a>
               </a>
             </figure>
-            <figcaption class="col-xs-7 col-md-7 col-lg-8 no-gutter">
+            <figcaption class="col-xs-7 col-md-7 col-lg-8">
               <div class="bit-authorName col-xs-12 no-gutter">John Jacob Jingleheimer Schmidt</div>
-              <div class="bit-authorHandle col-xs-12 no-gutter">
-                <a href="#">
-                  @JJJS
-                </a>  
-              </div>
+              <div class="bit-date col-xs-12 no-gutter">July 25, 1980</div>
             </figcaption>
-            <div class="bit-origin col-xs-2 no-gutter text-right">
-              <a href="#" class="bh-icon bh-icon-twitter"></a>
+            <div class="bit-origin col-xs-2 text-right">
+              <a href="#" class="bh-icon bh-icon-share js-bh-icon-share" data-toggle="popover" data-placement="bottom"></a>
             </div>
           </header>
-          <div class="bit-content col-sm-12">
-              <figure class="bit-content--media b_padding--lowVert">
+          <div class="bit-content col-sm-12 no-gutter">
+              <figure class="bit-content--media">
                 <img class="img-responsive" src="http://placehold.it/650x250" />
               </figure>
               <figcaption class="bit-content--caption">
+                <h3 class="bit-heading">Title of Bit Origin</h3>
                 <p>Image Example - this is an image example with a whole bunch of text that just goes on about nothing really.</p>
               </figcaption>
           </div>
-          <footer class="bit-footer col-sm-12">
-              <!-- Twitter Button -->
-              <div class="share-tw pull-right">
-                <a class="twitter-share-button" href="https://twitter.com/share">
-                  Tweet
-                </a>
-                <script type="text/javascript">
-                window.twttr=(function(d,s,id){var t,js,fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return}js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);return window.twttr||(t={_e:[],ready:function(f){t._e.push(f)}})}(document,"script","twitter-wjs"));
-                </script>
-              </div>
-              <!-- Facebook Like Button -->
-              <div class="share-fb b_padding--lowHorz pull-right">
-                <div id="fb-root"></div>
-                <script>(function(d, s, id) {
-                  var js, fjs = d.getElementsByTagName(s)[0];
-                  if (d.getElementById(id)) return;
-                  js = d.createElement(s); js.id = id;
-                  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=516064301835521&version=v2.0";
-                  fjs.parentNode.insertBefore(js, fjs);
-                }(document, 'script', 'facebook-jssdk'));</script>
-                <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
-              </div>
-          </footer>
           </div>
         </article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- OLD MARKUP -->
+
 
        <!-- Tall Image Example -->
         <article class="bit-container">
@@ -86,12 +98,12 @@
               <a href="#" class="bh-icon bh-icon-twitter"></a>
             </div>
           </header>
-          <div class="bit-content col-sm-12">
+          <div class="bit-content col-sm-12 no-gutter">
               <figure class="bit-content--media b_padding--lowVert">
                 <img class="img-responsive" src="http://placehold.it/250x600" />
               </figure>
-              <figcaption class="bit-content--caption">
-                <p>Image Example - this is an image example with a whole bunch of text that just goes on about nothing really.</p>
+              <figcaption class="bit-content--caption b_padding--medHorz">
+                <p>Vertical Image Example - this is an very tall image example with a whole bunch of text that just goes on about nothing really.</p>
               </figcaption>
           </div>
           <footer class="bit-footer col-sm-12">
@@ -141,14 +153,15 @@
               <a href="#" class="bh-icon bh-icon-youtube"></a>
             </div>
           </header>
-          <div class="bit-content col-sm-12">
+          <div class="bit-content col-sm-12 no-gutter">
               <figure class="bit-content--media b_padding--lowVert">
               <!-- Notice the div wrapper below for videos -->
               <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="//www.youtube.com/embed/egIY7ushchU?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                <!-- <iframe class="embed-responsive-item" src="//www.youtube.com/embed/egIY7ushchU?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe> -->
+                <iframe class="embed-responsive-item"  src="//www.youtube.com/embed/78ClAp9oSaQ?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
               </div>
               </figure>
-              <figcaption class="bit-content--caption">
+              <figcaption class="bit-content--caption b_padding--medHorz">
                 <p>Video Example - this is an video example with a whole bunch of text that just goes on about nothing really.</p>
               </figcaption>
           </div>
@@ -200,8 +213,8 @@
               <a href="#" class="bh-icon bh-icon-facebook"></a>
             </div>
           </header>
-          <div class="bit-content col-sm-12">
-              <figcaption class="bit-content--caption">
+          <div class="bit-content col-sm-12 no-gutter">
+              <figcaption class="bit-content--caption b_padding--medHorz">
                 <p>Facebook Example - this is an facebook example with a whole bunch of text that just goes on about nothing really.</p>
               </figcaption>
           </div>
@@ -252,11 +265,11 @@
               <a href="#" class="bh-icon bh-icon-instagram"></a>
             </div>
           </header>
-          <div class="bit-content col-sm-12">
+          <div class="bit-content col-sm-12 no-gutter">
               <figure class="bit-content--media b_padding--lowVert">
               <img src="https://instagramimages-a.akamaihd.net/media/2011/07/10/22f160cba78c431184a8808af9cac7ef_7.jpg" class="img-responsive" />
               </figure>
-              <figcaption class="bit-content--caption">
+              <figcaption class="bit-content--caption b_padding--medHorz">
                 <p>Instagram Example - this is an instagram example with a whole bunch of text that just goes on about nothing really.</p>
               </figcaption>
           </div>
@@ -307,12 +320,12 @@
               <a href="#" class="bh-icon bh-icon-flickr"></a>
             </div>
           </header>
-          <div class="bit-content col-sm-12">
+          <div class="bit-content col-sm-12 no-gutter">
               <figure class="bit-content--media b_padding--lowVert">
-                <img class="img-responsive" src="https://c3.staticflickr.com/3/2945/15466912325_59b351ccab_n.jpg" />
+                <img class="img-responsive" src="https://farm9.staticflickr.com/8497/8379887392_65bdf6b754_c.jpg" />
 
               </figure>
-              <figcaption class="bit-content--caption">
+              <figcaption class="bit-content--caption b_padding--medHorz">
                 <p>Flickr Example - this is an Flickr example with a whole bunch of text that just goes on about nothing really.</p>
               </figcaption>
           </div>
@@ -363,8 +376,8 @@
               <a href="#" class="bh-icon bh-icon-googleplus"></a>
             </div>
           </header>
-          <div class="bit-content col-sm-12">
-              <figcaption class="bit-content--caption">
+          <div class="bit-content col-sm-12 no-gutter">
+              <figcaption class="bit-content--caption b_padding--medHorz">
                 <p>Google+ - this is an Google+ example with a whole bunch of text that just goes on about nothing really.</p>
               </figcaption>
           </div>
@@ -415,8 +428,8 @@
               <a href="#" class="bh-icon bh-icon-twitter"></a>
             </div>
           </header>
-          <div class="bit-content col-sm-12">
-              <figcaption class="bit-content--caption">
+          <div class="bit-content col-sm-12 no-gutter">
+              <figcaption class="bit-content--caption b_padding--medHorz">
                 <p>Image Example - this is an <a href="#">image example with a whole bunch of text</a> that just goes on about nothing really.</p>
                 <p>Image Example - this is an image example with a whole bunch of text that just goes on about nothing really.</p>
               </figcaption>
@@ -467,13 +480,13 @@
               <a href="#" class="bh-icon bh-icon-youtube"></a>
             </div>
           </header>
-          <div class="bit-content col-sm-12">
+          <div class="bit-content col-sm-12 no-gutter">
               <figure class="bit-content--media b_padding--lowVert">
               <!-- Notice the div wrapper below for videos -->
               <div class="embed-responsive embed-responsive-16by9">
                 <iframe class="embed-responsive-item" src="//player.vimeo.com/video/108018156?color=ffffff" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
               </figure>
-              <figcaption class="bit-content--caption">
+              <figcaption class="bit-content--caption b_padding--medHorz">
                 <p>Video Example - this is an video example with a whole bunch of text that just goes on about nothing really.</p>
               </figcaption>
           </div>
@@ -506,7 +519,28 @@
       </div>        
 
     </main>
+    <script type='text/javascript' src='bower_components/jquery/dist/jquery.min.js'></script>
+    <script type='text/javascript' src='bower_components/bootstrap/dist/js/bootstrap.min.js'></script>
     <script type='text/javascript' src='bower_components/requirejs/require.js' data-main='bithub_social'></script>
     <script type='text/javascript' src='requirejsconfig.js'></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    $(".js-bh-icon-share").popover({
+        placement : 'bottom',
+        html : true,
+        container : '.bit-origin', 
+        content : '<div><h5>Share this:</h5> <a href="#"><span class="bh-icon-googleplus"></span></a><a href="#"><span class="bh-icon-facebook"></span></a><a href="#"><span class="bh-icon-twitter"></span></a></div>',
+        template : '<div class="popover in bit-sharemenu" role="tooltip"><div class="arrow"></div><h3 class="popover-title"></h3><div class="popover-content"></div></div>'
+    });
+});
+</script>
+
+
+
+
+
+
+
   </body>
 </html>

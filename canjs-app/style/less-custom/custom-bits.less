@@ -10,10 +10,12 @@
  width:  100%;
  .animated;
  .zoomIn;
+  -webkit-animation-duration: .2s;
+  -webkit-animation-delay: .2s;
 }
 // Default "Clear" Theme
 .bit {
-  .border-radius(10px);
+  .border-radius(4px);
   background-color: @white;
   border: 1px solid @gray-lighter;
   overflow: hidden;
@@ -27,41 +29,73 @@
   .bit-header,
   .bit-footer {
     padding: 10px 0;
-    .clearfix
+    .clearfix;
+    position: relative;
+  }
+  .bit-header {
+    .bh-icon-share {
+      &:before {
+        font-size: 1.5em;
+      }
+    }
+    .bit-date {
+      color: @gray-light;
+    }
   }
   .bit-avatar {
+    position: relative;
     .bit-avatar--img {
       border-radius: 50%;
     }
+    .bh-icon {
+      position: absolute;
+      bottom:-2px;
+      right:0;
+      border-radius: 50%;
+      padding: 5px;
+      border: 2px solid @white;
+      &:before {
+        color: @white;
+        font-size: 1em;
+        position: relative;
+        .vertical-align;   
+      }
+      &.bh-icon-twitter {
+        background-color: #55acee;
+      }
+      &.bh-icon-youtube {
+        background-color: #cc181e;
+      }
+      &.bh-icon-facebook {
+        background-color: #3b5998;
+      }
+      &.bh-icon-instagram {
+        background-color: #3f729b;
+      }
+      &.bh-icon-flickr {
+        background-color: #FF0084;
+      }
+      &.bh-icon-googleplus {
+        background-color: #d73d32;
+      }
+      &.bh-icon-tumblr {
+        background-color: #2d4661;
+      }
+      &.bh-icon-share {
+        background-color: @gray-light;
+      }       
+    }
+  }
+  .bit-origin {
+    position: absolute;
+    top: 15px;
+    right:0;
   }
   .bh-icon {
-    font-size: 1.5em;
-    padding-right:10px;
     &:hover {
       text-decoration: none;
     }
-  }
-  .bh-icon-twitter {
-    color: #55acee;
-  }
-  .bh-icon-youtube {
-    color: #cc181e;
-  }
-  .bh-icon-facebook {
-    color: #3b5998;
-  }
-  .bh-icon-instagram {
-    color: #3f729b;
-  }
-  .bh-icon-flickr {
-    color: #FF0084;
-  }
-  .bh-icon-googleplus {
-    color: #d73d32;
-  }
-  .bh-icon-tumblr {
-    color: #2d4661;
-  }
+  } 
   .share-fb {
     width: 70px;
   }
@@ -72,11 +106,19 @@
   // Content
   .bit-content--media {
     max-height: 350px;
-    overflow-y: auto;
-    overflow-x: hidden;
+    overflow: hidden;
+    margin-bottom: 10px;
   }
   .img-responsive {
     margin:0 auto;
+    width: 100%;
+  }
+  .bit-content--caption {
+    &:extend(.b_padding--medHorz all); 
+    &:extend(.b_padding--lowVert all);
+  }
+  .bit-heading {
+    margin-top:0;
   }
 }
 // In the inspector, apply the wrapper class to the body to see the design variations.
@@ -116,6 +158,31 @@
     } 
   }
 }
+// Social Icons
+  .bh-icon-twitter {
+    color: #55acee;
+  }
+  .bh-icon-youtube {
+    color: #cc181e;
+  }
+  .bh-icon-facebook {
+    color: #3b5998;
+  }
+  .bh-icon-instagram {
+    color: #3f729b;
+  }
+  .bh-icon-flickr {
+    color: #FF0084;
+  }
+  .bh-icon-googleplus {
+    color: #d73d32;
+  }
+  .bh-icon-tumblr {
+    color: #2d4661;
+  }
+  .bh-icon-share {
+    color: @gray-light;
+  } 
 // BitHub Style Theme
 .theme-4 {
   .bit {
