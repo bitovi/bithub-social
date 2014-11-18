@@ -1,0 +1,4 @@
+<div class="form-group">
+	<label>User Handle</label>
+	<input type="text" can-value="map.config.hanle" class="form-control">
+</div>

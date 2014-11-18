@@ -1,0 +1,25 @@
+{
+  "name": "bithub-social",
+  "version": "0.0.0",
+  "homepage": "https://github.com/bitovi/bithub-social",
+  "authors": [
+    "Mihael Konjevic <konjevic@gmail.com>"
+  ],
+  "license": "-",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "steal": "~0.3.0",
+    "CanJS": "git@github.com:bitovi/canjs.git#system-steal-domless",
+    "bootstrap": "~3.3.0",
+    "can-form": "retro/can-form",
+    "lodash": "~2.4.1",
+    "fontawesome": "~4.2.0"
+  }
+}

@@ -1,0 +1,4 @@
+<div class="form-group">
+	<label>Hashtag</label>
+	<input type="text" can-value="map.config.hashtag" class="form-control">
+</div>

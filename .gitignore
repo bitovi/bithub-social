@@ -19,3 +19,5 @@ canjs-app/bower_components
 canjs-app/style/imports.less
 canjs-app/style/dev.css
 canjs-app/style/app.css
+bower_components
+npm-debug.log

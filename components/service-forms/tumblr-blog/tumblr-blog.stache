@@ -1,0 +1,4 @@
+<div class="form-group">
+	<label>Blog URL</label>
+	<input type="text" can-value="map.config.hostname" class="form-control">
+</div>
