@@ -2,12 +2,14 @@ bh-services {
 	display: block;
 	.service-slider-outer-wrap {
 		position: relative;
+		margin-bottom: 20px;
 	}
 	.service-slider-wrap {
 		overflow: hidden;
 		height: 77px;
+		border-left: 1px solid #dad9d9;
+		border-right: 1px solid #dad9d9;
 		.new-service-picker {
-			padding-left: 1px;
 			width: 711px;
 			li {
 				float: left;
@@ -26,6 +28,12 @@ bh-services {
 				&.active {
 					background: white;
 					color: #249cb8;
+				}
+				&:last-child {
+					border-right: none;
+				}
+				&:first-child {
+					border-left: none;
 				}
 			}
 		}

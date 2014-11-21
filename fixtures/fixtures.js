@@ -1,4 +1,4 @@
-steal('can/util/fixture', function(fixture){
+steal('can/util/fixture', './services.js', function(fixture){
 
 	var embedStore = can.fixture.store(10, function(i){
 		var id = i + 1;
@@ -31,4 +31,6 @@ steal('can/util/fixture', function(fixture){
 	can.fixture('POST /api/v3/embeds', embedStore.create);
 	can.fixture('PUT /api/v3/embeds/{id}', embedStore.update);
 	can.fixture('DELETE /api/v3/embeds/{id}', embedStore.destroy);
+
+
 })

@@ -31,7 +31,7 @@ function(Component, Models, initView){
 				this.attr('currentService', new Models.Service({
 					feed_name : feed
 				}));
-s			},
+			},
 			currentServiceFeedName : function(){
 				var feed = this.attr('currentService').attr('feed_name');
 				return Models.Service.feeds[feed];
@@ -51,7 +51,7 @@ s			},
 					self = this,
 					marginLeft = parseInt(servicesEl.css('margin-left'), 10),
 					containerWidth = this.element.find('.service-slider-wrap').innerWidth() - 1,
-					width = servicesEl.outerWidth();
+					width = servicesEl.outerWidth() - 2;
 
 				if(this.__scrollDirection === 'left' && marginLeft < 0){
 					this.__scrollTimeout = setTimeout(function(){

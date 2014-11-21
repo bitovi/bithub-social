@@ -17,8 +17,7 @@
 	<i class="scroll-right fa fa-chevron-right"></i>
 </div>
 
-
 {{#if currentService.isNew}}
-	<b>Add {{currentServiceFeedName}}</b>
+	<h4>Add {{currentServiceFeedName}}</h4>
 	<bh-service-form service="{currentService}"></bh-service-form>
 {{/if}}

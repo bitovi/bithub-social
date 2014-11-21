@@ -57,7 +57,7 @@ function(Model, _keys){
 	};
 
 	return Model.extend({
-		resource : '/api/v3/embeds/{embedId}/services',
+		resource : '/api/v3/services',
 		feeds : FEEDS
 	}, {
 		define : {
